@@ -28,10 +28,10 @@ header {
 }
 
 .top-bar-logo {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
     vertical-align: middle;
-    height: 75px
+    height: 70px
 }
 
 .top-bar-header {
@@ -134,4 +134,30 @@ a.topbar-button::after {
 .topbar-button.dropdown-toggle.focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.bottom-footer {
+    text-decoration: none;
+    color: black;
+    height: 5vh;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.bottom-footer img {
+    height:20px;
+    margin-right: 2px;
+    display: inline;
+    margin-bottom: 3px
+}
+
+.image-text-footer span{
+    display: inline-flex;
+    color: black
+}
+
+.bottom-footer a {
+    margin: 10px
 }
