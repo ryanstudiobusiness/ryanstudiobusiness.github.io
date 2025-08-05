@@ -12,26 +12,15 @@
 <body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
-    <div class="top-bar">
-    <div>
-    <header><img src="images/PELogo.png" alt="PELogo" class="top-bar-logo""><a href="index.html" class="linked-title">NYP Piano Ensemble</a></header>
-    </div>
-    <div class="button-row">
-        <div class="dropdown">
-  <button class="btn topbar-button dropdown-toggle" type="button" id="aboutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 13px;"><a class="topbar-button">About</a>
-  </button>
-  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-    <a class="dropdown-item" href="aboutus.html#Ourmission">Our Mission</a>
-    <a class="dropdown-item" href="aboutus.html#ExcoTeam">Our Exco</a>
-    <a class="dropdown-item" href="#">History</a>
-  </div>
-</div>
-        <a class="topbar-button">Performances</a>
-        <a class="topbar-button">Upcoming Events</a>
-        <a class="topbar-button">Sign Up</a>
-    </div>
-    </div>
+<div id="top-bar"></div>
+<script>
+    fetch('./header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('top-bar').innerHTML = html;
+      })
+      .catch(err => console.error('Header load failed:', err));
+  </script>
     <div>
         <img src="images/performance.jpg" class="main-image">
     </div>
@@ -55,17 +44,22 @@
         <div class="image-text-unit">
             <img src="images/bonding.webp">
             <h1 class="section-title">Meet Other Pianists</h1>
-            <p>Meet and learn from other Pianists in NYPPE! You will get to meet Pianists of all genres, skillsets, and personalities!</p>
+            <p>Meet and learn from other Pianists in NYPPE! You will get to meet Pianists of all genres, skillsets, and personalities!
+                Members will get opportunities to bond with each other through various events and activities, such as outings, performances, and more!
+            </p>
         </div>
         </div>
     </div>
     </div>
-    <hr>
-    <div class="bottom-footer">
-        <a class="image-text-footer" href="https://www.instagram.com/nyppianoensemble/?hl=en"><img src="images/Instagram_icon.png"></a>
-        <a class="image-text-footer" href="https://www.instagram.com/nyppianoensemble/?hl=en"><img src="images/discord.webp" style="height: 25px;"></a>
-        <a class="image-text-footer" href="https://www.instagram.com/nyppianoensemble/?hl=en"><img src="images/snapchat.png" style="height: 25px;"></a>
-    </div>
+    <div id="footer"></div>
+<script>
+    fetch('./footer.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      })
+      .catch(err => console.error('Header load failed:', err));
+  </script>
     
 </body>
 </html>

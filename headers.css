@@ -161,3 +161,21 @@ a.topbar-button::after {
 .bottom-footer a {
     margin: 10px
 }
+
+.section-row {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: inherit;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
