@@ -37,4 +37,15 @@ h1 {
     margin-left: 15vh;
     margin-right: 0px;
     line-height: 1.8;
+    font-size: 20px;
+}
+
+.lim-length {
+  width: 70%;
+  margin: auto;
+}
+
+
+table tr:hover {
+  background-color: rgba(220,220,220,0.5);
 }
