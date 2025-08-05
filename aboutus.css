@@ -1,8 +1,42 @@
-h1 {
+h1.ourmission {
     font-size: 50px;
-    text-align: center; font-family:'Playfair Display', serif; 
+    text-align: center; 
+    font-family:'Playfair Display', serif; 
+    padding: 20px;
 }
 
-.about-us-container {
-    
+.left-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px;
+    margin-bottom: 50px
+}
+
+
+.text-block {
+  flex: 1; /* take up available space */
+}
+
+.text-block h1 {
+  font-size: 50px;
+  text-align: center; 
+  font-family: 'Playfair Display', serif; 
+  padding: 20px;
+}
+
+.image-block img {
+  max-width: 40vw;
+  height: auto;
+  display: block;
+  margin-right: 15vh;
+  max-height: 25vw;
+}
+
+.text-block p {
+    width: 45vw;
+    margin-left: 15vh;
+    margin-right: 0px;
+    line-height: 1.8;
 }
