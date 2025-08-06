@@ -1,0 +1,34 @@
+.centered-header {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.performance-container {
+    margin:20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.performance-container iframe {
+    display: flex;
+}
+
+.text-block {
+    text-align: center;
+    margin: 20px;
+    flex: 1
+}
+
+.text-block p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.iframe-container {
+    display: block;
+}
+.iframe-container iframe {
+    margin-bottom: 5vh;
+}

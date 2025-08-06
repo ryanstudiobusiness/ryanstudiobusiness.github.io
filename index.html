@@ -6,26 +6,20 @@
     <title>NYP Piano Ensemble</title>
     <link rel="icon" type="image/png" href="images/PELogo.png">
     <link rel="stylesheet" href="CSS/headers.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <div id="top-bar"></div>
-<script>
-    fetch('HTML/header.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('top-bar').innerHTML = html;
-      })
-      .catch(err => console.error('Header load failed:', err));
-  </script>
+
     <div class="image-container">
-        <img src="images/performance.jpg" class="img-fluid">
-        <button class="btn btn-primary centered-button" onclick="location.href='HTML/signup.html'">Sign up today!</button>
-        <span class="image-text">Join NYP-PE Today!</span>
+        <img src="images/learnpiano.jpg" class="img-fluid">
+        <button class="btn btn-primary centered-button" onclick="location.href='HTML/signup.html'">Sign up!</button>
+        <span class="image-text">Join Us Today!</span>
     </div>
+    <br><br><br>
     <h1 style="font-size: 50px;" id="about-us" class="section-title">What To Expect</h1>
     <div class="section-container">
         <div class="image-text-unit">
@@ -54,14 +48,7 @@
     </div>
     </div>
     <div id="footer"></div>
-<script>
-    fetch('HTML/footer.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('footer').innerHTML = html;
-      })
-      .catch(err => console.error('Header load failed:', err));
-  </script>
+<script type="text/javascript" src="../JS/headers_footers.js"></script>
     
 </body>
 </html>

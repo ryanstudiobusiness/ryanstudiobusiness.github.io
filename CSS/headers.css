@@ -16,15 +16,26 @@ header {
     cursor: pointer;
     text-align: center;
 }
-
 .top-bar {
-    min-height: 5vh;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    z-index: -2;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  background-color: white; /* Optional: for better visibility */
+}
 
+.top-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .top-bar-logo {
@@ -89,7 +100,6 @@ a.topbar-button, a.topbar-button:hover {
     overflow: hidden;
     border-radius: 10px;
     transition: margin 0.1s ease-in-out;
-    font-size: 20px;
     z-index: 2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
@@ -100,6 +110,11 @@ a.topbar-button, a.topbar-button:hover {
  a {
     color: black;
     text-decoration: none;
+}
+
+a.topbar-button.dropdown-toggle::after {
+  content: none !important;
+  display: none !important;
 }
 
 a.topbar-button::after {
@@ -123,18 +138,14 @@ a.topbar-button::after {
 
 .linked-title, .linked-title:hover {
     font-family: 'Playfair Display', serif;
-    text-decoration: none;
-    color: black;
-    color: inherit;
-    font-weight: bolder;
+    font-size: 32px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
 
-.topbar-button.dropdown-toggle:focus,
-.topbar-button.dropdown-toggle:active,
-.topbar-button.dropdown-toggle.focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
 
 .bottom-footer {
     text-decoration: none;
@@ -178,4 +189,13 @@ a.topbar-button::after {
 body {
     opacity: 0;
     animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+}
+.navbar-nav .nav-link:hover {
+  color: #5a4633;
 }

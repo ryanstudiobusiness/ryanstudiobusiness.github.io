@@ -37,14 +37,20 @@ h1 {
     margin-bottom: 10px;
     line-height: 1.8;
     font-size: 20px;
+    text-align: left;
 }
 
 .lim-length {
   width: 70%;
   margin: auto;
+  align-self: left;
 }
 
 
 table tr:hover {
   background-color: rgba(220,220,220,0.5);
+}
+
+table tr {
+  text-align: left;
 }
