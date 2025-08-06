@@ -78,7 +78,7 @@
   padding: 12px 24px;
   background-color: rgba(0, 123, 255, 0.8);
   color: white;
-  font-size: 28px;
+  font-size: 1.5rem;
   border: none;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
@@ -98,6 +98,7 @@
     color: white;
     font-size: 70px;
     font-weight: bold;
+    font-size: 5vw;
 }
 
 .centered-button:hover {

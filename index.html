@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYP Piano Ensemble</title>
     <link rel="icon" type="image/png" href="images/PELogo.png">
+    <link rel="stylesheet" href="CSS/headers.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="headers.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <div id="top-bar"></div>
 <script>
-    fetch('./header.html')
+    fetch('HTML/header.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('top-bar').innerHTML = html;
@@ -23,7 +23,7 @@
   </script>
     <div class="image-container">
         <img src="images/performance.jpg" class="img-fluid">
-        <button class="btn btn-primary centered-button">Sign up today!</button>
+        <button class="btn btn-primary centered-button" onclick="location.href='HTML/signup.html'">Sign up today!</button>
         <span class="image-text">Join NYP-PE Today!</span>
     </div>
     <h1 style="font-size: 50px;" id="about-us" class="section-title">What To Expect</h1>
@@ -55,7 +55,7 @@
     </div>
     <div id="footer"></div>
 <script>
-    fetch('./footer.html')
+    fetch('HTML/footer.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('footer').innerHTML = html;

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/PELogo.png">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="headers.css">
+    <link rel="stylesheet" href="../CSS/headers.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../CSS/signup.css">
 
 </head>
 <body>
@@ -15,27 +15,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     <div id="top-bar"></div>
-<script>
-    fetch('./header.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('top-bar').innerHTML = html;
-      })
-      .catch(err => console.error('Header load failed:', err));
-  </script>
-<img src="images/group.jpg" class="main-image">
+<img src="../images/group.jpg" class="main-image">
 <h1 class="centered-text">Join NYPPE Today!</h1>
 <form class="form-container">
   <div class="form-group">
-    <label for="admissionNO">Admin Number*</label>
+    <label for="admissionNO">Admin Number *</label>
     <input type="text" class="form-control" id="admissionNO" placeholder="123456D" required>
   </div>
   <div class="form-group">
-    <label for="emailAddress">School Provided Email*</label>
+    <label for="emailAddress">School Provided Email *</label>
     <input type="email" class="form-control" id="emailAddress" placeholder="123456@mymail.nyp.edu.sg" required>
   </div>
   <div class="form-group">
-    <label for="experienceLevel">Relevant Experience*</label>
+    <label for="experienceLevel">Relevant Experience *</label>
     <input type="text" class="form-control" id="experienceLevel" placeholder="Grade 6 ARBSM..." required>
   </div>
   <div class="form-group">
@@ -45,13 +37,6 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <div id="footer"></div>
-<script>
-    fetch('./footer.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('footer').innerHTML = html;
-      })
-      .catch(err => console.error('Header load failed:', err));
-  </script>
+<script type="text/javascript" src="../JS/headers_footers.js"></script>
 </body>
 </html>

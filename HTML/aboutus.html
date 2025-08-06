@@ -6,30 +6,31 @@
         <title>NYP Piano Ensemble</title>
         <link rel="icon" type="image/x-icon" href="images/PELogo.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="aboutus.css">
-        <link rel="stylesheet" href="headers.css">
+        <link rel="stylesheet" href="../CSS/aboutus.css">
+        <link rel="stylesheet" href="../CSS/headers.css">
     </head>
     <body>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
         <div id="top-bar"></div>
-<script>
-    fetch('./header.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('top-bar').innerHTML = html;
-      })
-      .catch(err => console.error('Header load failed:', err));
-  </script>
         <h1 class="ourmission" id="Ourmission" style="margin-top: 20px;">Our Mission</h1>
         <div class="left-image-container">
             <div class="text-block">
         <p>The NYP Piano Ensemble's mission is to nurture and grow its members’ musical passion and support aspiring musicians. Musicians are encouraged to explore their own styles and forms of music and performances, as well as peer teach amongst the members. Members have opportunities to learn the theory behind the instrument and put all the learning into practice through various events and shows throughout the year. The club welcomes musicians with experience, as well as new musicians. </p>
         </div>
         <div class="image-block">
-            <img src="images/anotherperformance.webp">
+            <img src="../images/anotherperformance.webp">
         </div>
+    </div>
+    <h1 class="ourmission" id="History" style="margin-top: 20px;">History</h1>
+    <div class="left-image-container">
+        <div class="image-block">
+        <img src="../images/PE2.jpg">
+        </div>
+        <div class="text-block">
+        <p>The NYP Piano Ensemble was founded in 2001 by a group of passionate musicians who wanted to create a platform for pianists to come together, learn, and perform. Over the years, the ensemble has grown in size and reputation, hosting numerous performances and events that showcase the talents of its members. The ensemble has also collaborated with other clubs and organizations within NYP to promote music and the arts on campus.</p>
+    </div>
     </div>
     <h1 class="ourmission" id="ExcoTeam" style="margin-bottom: 10px;">Exco Team</h1>
     <table class="table lim-length">
@@ -63,13 +64,6 @@
         </tbody>
     </table>
     <div id="footer"></div>
-<script>
-    fetch('./footer.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('footer').innerHTML = html;
-      })
-      .catch(err => console.error('Header load failed:', err));
-  </script>
+<script type="text/javascript" src="../JS/headers_footers.js"></script>
     </body>
     </html>
