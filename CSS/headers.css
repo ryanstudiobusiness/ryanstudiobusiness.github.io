@@ -209,3 +209,7 @@ body {
     color: blue;
     text-decoration: underline;
     }
+
+.centered {
+  text-align: center;
+}
