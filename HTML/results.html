@@ -14,13 +14,12 @@
     <div id="top-bar"></div>
     <script>
   const params = new URLSearchParams(window.location.search);
-  const name = params.get('name');
   const admissionNO = params.get('admissionNO');
   const emailAddress = params.get('emailAddress');
   const experienceLevel = params.get('experienceLevel');
   const joining = params.get('joining');
   document.write(`<div class="margin-text"><h1>Confirmation</h1>`);
-  document.write(`<p>Thank you for signing up, ${name}!</p>`);
+  document.write(`<p>Thank you for signing up!</p>`);
   document.write(`<p>Here are the details you provided:</p>`);
   document.write(`<ul>`);
   document.write(`<li>Admission Number: ${admissionNO}</li>`);

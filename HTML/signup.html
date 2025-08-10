@@ -18,29 +18,30 @@
 <form class="form-container" action="results.html" method="get" id="submission">
   <div class="form-group">
     <label for="admissionNO">Admin Number *</label>
-    <input type="text" class="form-control" id="admissionNO" placeholder="123456D" required>
+    <input type="text" class="form-control" name="admissionNO" placeholder="123456D" required>
   </div>
   <div class="form-group">
     <label for="emailAddress">School Provided Email *</label>
-    <input type="email" class="form-control" id="emailAddress" placeholder="123456@mymail.nyp.edu.sg" required>
+    <input type="email" class="form-control" name="emailAddress" placeholder="123456@mymail.nyp.edu.sg" required>
   </div>
   <div class="form-group">
     <label for="experienceLevel">Relevant Experience *</label>
-    <input type="text" class="form-control" id="experienceLevel" placeholder="Grade 6 ARBSM..." required>
+    <input type="text" class="form-control" name="experienceLevel" placeholder="Grade 6 ARBSM..." required>
   </div>
   <div class="form-group">
     <label for="joining">What made you pick us?</label>
-    <input type="text" class="form-control" id="joining" placeholder="Interesting, Fun...">
+    <input type="text" class="form-control" name="joining" placeholder="Interesting, Fun...">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 <script>
   document.getElementById('signupForm').addEventListener('submit', function(event) {
+    // If the form is not valid, let the browser show errors
     if (!this.checkValidity()) {
       return;
     }
-    event.preventDefault(); 
+    event.preventDefault(); // Prevent default form submission
     const admissionNO = document.getElementById('admissionNO').value;
     const emailAddress = document.getElementById('emailAddress').value;
     const experienceLevel = document.getElementById('experienceLevel').value;
