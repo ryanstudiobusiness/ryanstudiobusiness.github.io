@@ -1,6 +1,5 @@
 function loadHeaderFooter() {
-  const root = window.location.origin + '/';
-  fetch(`../HTML/header.html`)
+  fetch('../HTML/header.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('top-bar').innerHTML = html;
