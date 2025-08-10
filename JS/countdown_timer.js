@@ -1,7 +1,7 @@
 const display = document.getElementById('timer');
 
 window.addEventListener('DOMContentLoaded', () => {
-  let countdown = 5;
+  let countdown = 10;
   display.textContent = countdown;
 
   // countdown by one every second (1000ms)
