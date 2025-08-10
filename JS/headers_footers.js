@@ -1,13 +1,13 @@
 function loadHeaderFooter() {
-  const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
-  fetch(basePath+ '../HTML/header.html')
+  const root = window.location.origin + '/';
+  fetch(root + 'HTML/header.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('top-bar').innerHTML = html;
     })
     .catch(err => console.error('Header load failed:', err));
 
-  fetch(basePath+'../HTML/footer.html')
+  fetch(root + '/HTML/footer.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('footer').innerHTML = html;
