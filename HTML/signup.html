@@ -15,7 +15,7 @@
 <div id="top-bar"></div>
 <h1 class="centered-text" style="margin-top: 20px;">Join NYPPE Today!</h1>
 <hr>
-<form class="form-container" action="results.html" method="get">
+<form class="form-container" action="results.html" method="get" id="submission">
   <div class="form-group">
     <label for="admissionNO">Admin Number *</label>
     <input type="text" class="form-control" id="admissionNO" placeholder="123456D" required>
@@ -32,12 +32,14 @@
     <label for="joining">What made you pick us?</label>
     <input type="text" class="form-control" id="joining" placeholder="Interesting, Fun...">
   </div>
-  <button type="submit" class="btn btn-primary" id="submission">Submit</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 <script>
-  const form = document.getElementById('submission');
-  document.getElementById('submission').addEventListener('click', function(event) {
+  document.getElementById('signupForm').addEventListener('submit', function(event) {
+    if (!this.checkValidity()) {
+      return;
+    }
     event.preventDefault(); 
     const admissionNO = document.getElementById('admissionNO').value;
     const emailAddress = document.getElementById('emailAddress').value;
